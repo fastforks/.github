@@ -10,7 +10,7 @@ Bundle repos such as `fast-vision-models` have no tier branches: the tier is a f
 
 ## Overview
 
-Speed-up and memory of the `cuda-kernels` tier against upstream + flags, at each repo's main setting (stereo: Middlebury-H 1482x994; "(portable)" = repo has no `cuda-kernels` tier, value is for `portable`; "vs upstream" = repo has no flags row; "-" = tier does not exist; memory = peak allocated, `cuda-kernels` / flags). Full table with all tiers in ms, settings, quality and notes: **[OVERVIEW.md](https://github.com/fastforks/.github/blob/main/OVERVIEW.md)**.
+Speed-up and memory of the `cuda-kernels` tier against upstream + flags, at each repo's main setting (stereo: Middlebury-H 1482x994; "(portable)" = repo has no `cuda-kernels` tier, value is for `portable`; "vs upstream" = repo has no flags row; "-" = tier does not exist; memory = peak allocated, `cuda-kernels` / flags). Full table (33 columns: every tier in ms, speed-ups vs flags and vs upstream, peak MB alloc / reserved, startup / first call / new size, quality, licences, branches, commit SHAs, date, GPU; all 63 fast-vision-models models as individual rows): **[OVERVIEW.md](https://github.com/fastforks/.github/blob/main/OVERVIEW.md)**.
 
 | model | task | repo | licence | cuda-kernels vs flags | memory (cuda-kernels / flags) |
 |---|---|---|---|---|---|
@@ -75,9 +75,9 @@ Speed-up and memory of the `cuda-kernels` tier against upstream + flags, at each
 | CoTracker | point tracking | [co-tracker](https://github.com/fastforks/co-tracker) | CC BY-NC 4.0; commercial: no | 1.86 | 0.43 |
 | fused-ssim | fused L1+SSIM loss kernel | [fused-ssim](https://github.com/fastforks/fused-ssim) | MIT; commercial: yes | 2.21 vs upstream (no flags tier) | - |
 | gsplat | 3D Gaussian splatting training | [gsplat](https://github.com/fastforks/gsplat) | Apache-2.0; commercial: yes | 3.24 vs upstream (no flags tier) | - |
-| 27 classification models | classification | [fast-vision-models](https://github.com/fastforks/fast-vision-models) | per-model weights, see repo; code Apache-2.0 | median 2.10 (range 1.12 to 3.41) | median 0.51 |
-| 17 segmentation models | segmentation | [fast-vision-models](https://github.com/fastforks/fast-vision-models) | per-model weights, see repo; code Apache-2.0 | median 1.75 (range 1.39 to 2.60) | median 0.53 |
-| 19 backbones | backbones | [fast-vision-models](https://github.com/fastforks/fast-vision-models) | per-model weights, see repo; code Apache-2.0 | median 1.32 (range 0.34 to 2.15) | median 1.09 |
+| 27 classification models | classification | [fast-vision-models](https://github.com/fastforks/fast-vision-models); [every model in OVERVIEW.md](https://github.com/fastforks/.github/blob/main/OVERVIEW.md) | per-model weights, see repo; code Apache-2.0 | median 2.10 (range 1.12 to 3.41) | median 0.51 |
+| 17 segmentation models | segmentation | [fast-vision-models](https://github.com/fastforks/fast-vision-models); [every model in OVERVIEW.md](https://github.com/fastforks/.github/blob/main/OVERVIEW.md) | per-model weights, see repo; code Apache-2.0 | median 1.75 (range 1.39 to 2.60) | median 0.53 |
+| 19 backbones | backbones | [fast-vision-models](https://github.com/fastforks/fast-vision-models); [every model in OVERVIEW.md](https://github.com/fastforks/.github/blob/main/OVERVIEW.md) | per-model weights, see repo; code Apache-2.0 | median 1.32 (range 0.34 to 2.15) | median 1.09 |
 
 ## Notes
 
